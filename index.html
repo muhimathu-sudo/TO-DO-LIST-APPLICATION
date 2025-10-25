@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOGIN PAGE -->
+  <div class="login-container" id="login-page">
+    <h1>Welcome Back!</h1>
+    <input type="text" id="username" placeholder="Enter Username" />
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button id="loginBtn">Login</button>
+    <p id="login-error"></p>
+  </div>
+
+  <!-- TO-DO APP PAGE -->
+  <div class="todo-container hidden" id="todo-page">
+    <div class="header">
+      <h1 id="welcomeUser"></h1>
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <div class="filter-area">
+      <button class="filter" data-filter="all">All</button>
+      <button class="filter" data-filter="completed">Completed</button>
+      <button class="filter" data-filter="pending">Pending</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
